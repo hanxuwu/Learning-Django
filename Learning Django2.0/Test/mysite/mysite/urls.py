@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path   #new in Django 2.0      
 from . import views
+from article.views import article_detail # reference
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # www.xxxx.com/admin/
-    path('', views.index)  # open the link first page     # www.xxxx.com,then add an method
+    path('', views.index),  # open the link first page     # www.xxxx.com,then add an method
     # re_path('$',views.index)    Django 1.0 style the same 
+    path('article/<int:article_id>',article_detail,name="article_detail"), # name could named by yourself
 ]
