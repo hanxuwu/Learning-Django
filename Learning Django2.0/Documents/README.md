@@ -170,7 +170,64 @@ b.After
 a.Backup the database  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/BACKUPDB.PNG)   
 
-b.add the createtime to admin article  
+b.add the createtime to admin article  in models.py  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDCREATETIME.PNG)  
+
+c.If you don't makemigrations  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/IFNOTUPDATEDB.PNG)   
+
+d.make mikegrations  
+`python manage.py makemigrations`  
+THERE IS NO DEFAULT VALUE  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/AFTERMAKEMIGRATION.PNG)    
+
+e.There are 2 way to set the default  
+__First Methon__:  timezone.now  
+1.input  
+`timezone.now`
+2.add the column in admin.py   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDCREATEINADMIN.PNG)  
+3.migrate    
+
+`python manage.py migrate`  
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/AFTERADDED.PNG)    
+
+__Second Methon__:default  
+DELETE previous the 0002\_article\_created\_time.py in \_pycache\_ first   and restore the DB   
+1.add default value  in admin.py  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDDEFAULT.PNG)   
+
+2.apply the new database  
+`python manage.py migrate`  
+
+3.After method 2  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/AFTERMETHOD2.PNG)  
+
+## 30. add last update time  
+1.Add last update time  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDLASTUPDATE.PNG)   
+2.Add columnn  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDLASTTIMECOLUMN.PNG)   
+
+3.migrates  
+`python manage.py migrate`   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/AFTERADDLASTUPDATE.PNG)   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
