@@ -1,0 +1,11 @@
+<html>
+<head>
+</head>
+<body>
+        {% for article in articles %}
+            <!--<p>{{article.title}}</p>-->
+            <!--<a href="/article/{{article.pk}}">{{article.title}}</a> -->  <!-- open from root  <a> for jump-->
+            <a href="{% url 'article_detail' article.pk%}">{{article.title}}</a> 
+        {% endfor %}
+</body>
+</html>
