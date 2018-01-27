@@ -1,4 +1,4 @@
-# Learning-Django  
+# Learning-Django  --TEST
 
 ## 1.Install Django2.0
 `python`  
@@ -244,6 +244,58 @@ d.We need to add Filter the deleted one  in view.py
 
 then the page does not show the deleted one  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/NOSHOWDELETED.PNG)  
+
+
+
+# Learning-Django  --Blog
+
+## 1.install  environment  
+a. Install virtual environment  
+`pip install virtualenv`   
+`pip list`  
+
+b. create virtualenv  
+`virtuallenv xxxxxxxx`  
+c. start virtualenv  
+`Scripts\activate`  
+d.exit  
+`deactivate`  
+
+## 2.create virtualenv  
+a.create virtualenv  
+`virtualenv myblog_env`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog2a.PNG)  
+
+b.automatically add these file
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog2b.PNG)   
+
+c. enter the virtualenv  
+`cd myblog_env`  
+`Scripts\activate`
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog1c.PNG)  
+
+d. install Django2.0  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog2d.PNG)  
+
+## 3. create the new project  
+a.Start new project
+`django-admin startproject myblog`  
+`cd myblog`  
+
+b.Start app   
+`python manage.py startapp blog`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog3b.PNG)  
+
+c.After creation
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog3c.PNG)    
+
+
+
+
+
+
+
 
 
 
