@@ -288,7 +288,58 @@ b.Start app
 
 c.After creation
 
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog3c.PNG)    
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog3c.PNG)   
+
+
+## 4. create superuser   
+a. initalize the datebase  
+`python manage.py migrate`  
+b. create superuser   user:admin  pwd:wo* * * * * *1
+`python manage.py createsuperuser`  
+
+## 5. add new model  
+
+a. add new model in models.py
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5a.PNG)  
+
+b.register blog app in setting.py  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5b.PNG)  
+
+c. make makemigrations  
+`python manage.py makemigrations`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5c.PNG)  
+
+`python manage.py migrate`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5c1.PNG)  
+
+d. setting the admin  manage  in  admin.py  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5d.PNG)  
+
+e. login  
+`http://localhost:8000/admin/`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5e.PNG)  
+
+f.make it display the name(not <object1>),modify models.py  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5f.PNG)  
+
+g. then add one blog  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5g.PNG) 
+
+
+## 6. pip export the env name  
+a. export the lib  
+`pip freeze > requirements.txt`
+
+b. install the lib  
+`pip install -r requirements.txt`
+
+
+
+
+
+
+
+
 
 
 
