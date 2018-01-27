@@ -204,15 +204,51 @@ DELETE previous the 0002\_article\_created\_time.py in \_pycache\_ first   and r
 3.After method 2  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/AFTERMETHOD2.PNG)  
 
-## 30. add last update time  
-1.Add last update time  
+## 30. Add last update time  
+a.Add last update time  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDLASTUPDATE.PNG)   
-2.Add columnn  
+b.Add columnn  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDLASTTIMECOLUMN.PNG)   
 
-3.migrates  
+c.migrates  
 `python manage.py migrate`   
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/AFTERADDLASTUPDATE.PNG)   
+
+## 31 Add author  
+a.Add author in models.py  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDAUTHOR.PNG)  
+
+b.Add author column in admin.py  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDAUTHORCOLU.PNG)  
+
+c.Apply  
+`python manage.py makemigrations`  
+`python manage.py migrates`   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/AFTERADDAUTHOR.PNG)  
+
+## 32 is deleted  
+
+a.Add is_deleted  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDISDELETE.PNG)  
+b.Add it to showlist  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ADDTOSHOWLIST.PNG)  
+
+c.Mark is_deleted  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/DELETETRUE.PNG)  
+the article list doesn't change  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/ARTICLEBEFORE.PNG)  
+
+
+d.We need to add Filter the deleted one  in view.py  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/FILTERDELETED.PNG)   
+
+then the page does not show the deleted one  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/NOSHOWDELETED.PNG)  
+
+
+
+
+
 
 
 

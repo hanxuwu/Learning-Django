@@ -17,7 +17,8 @@ def article_detail(request, article_id):
     #return HttpResponse("<h2>Article title: %s</h2><br>Article content: %s "%(article.title,article.content))
 
 def article_list(request):
-    articles = Article.objects.all()
+    #articles = Article.objects.all()
+    articles = Article.objects.filter(is_deleted=False) # filter the deletedone
     context={}
     context['articles'] = articles
     return render_to_response("article_list.html",context)
