@@ -403,7 +403,40 @@ d. add Alabel in *blog_detail.html*
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog13d.PNG)  
 
 f. The basic function  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog27012018.gif)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog27012018.gif)   
+
+
+## 14 Create the common templates  
+a.Create *base.html* in Templates folder  
+`{% block title %}{% endblock %}`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog14a.PNG)  
+
+b. Modify *blog_detail.html*  
+`{% extends 'base.html'%}`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog14b.PNG)  
+
+c. Modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog14c.PNG)  
+
+d. Modify *blog_with_type.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog14d.PNG)  
+
+## 15.global templates  
+a. Create global templates folder in myblog folder  
+b. add it to *setting.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog15b.PNG)  
+c. cut all the html templates to global templates  
+b. create a *blog* Folder in global templates for better manage  
+f. modify the path in *view.py*  
+`return render_to_response('blog/blog_with_type.html',context)`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog15f.PNG)  
+  
+
+
+
+
+
+
 
 
 
