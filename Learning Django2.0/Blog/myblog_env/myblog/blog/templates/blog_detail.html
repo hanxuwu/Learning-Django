@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{{blog.title}}</title>    
+</head>
+<body>
+    <div>
+        <a href="{%url 'home'%}">
+            <h3>BLOGS</h3>
+        </a>
+    </div>
+    <hr>
+    <h3>{{blog.title}}</h3>
+    <p>Author:{{blog.author}}</p>
+    <p>Date:{{blog.create_time|date:"Y-m-d G:n:s"}}</p>
+    <!--<p>Catalog:{{blog.blog_type}}</p> -->
+    <p>Catalog:
+        <a href="{% url 'blogs_with_type' blog.blog_type.pk%}">  <!--urls.py--> <!--models.py-->          
+        {{blog.blog_type}}
+        </a>
+    </p>
+
+    <p>{{blog.content}}</p>
+</body>
+</html>

@@ -262,23 +262,23 @@ d.exit
 `deactivate`  
 
 ## 2.create virtualenv  
-a.create virtualenv  
+a.create virtualenv   
 `virtualenv myblog_env`  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog2a.PNG)  
 
-b.automatically add these file
+b.automatically add these file  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog2b.PNG)   
 
 c. enter the virtualenv  
 `cd myblog_env`  
-`Scripts\activate`
+`Scripts\activate`  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog1c.PNG)  
 
 d. install Django2.0  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog2d.PNG)  
 
 ## 3. create the new project  
-a.Start new project
+a.Start new project  
 `django-admin startproject myblog`  
 `cd myblog`  
 
@@ -299,7 +299,7 @@ b. create superuser   user:admin  pwd:wo* * * * * *1
 
 ## 5. add new model  
 
-a. add new model in models.py
+a. add new model in models.py  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog5a.PNG)  
 
 b.register blog app in setting.py  
@@ -331,7 +331,104 @@ a. export the lib
 `pip freeze > requirements.txt`
 
 b. install the lib  
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`  
+
+## 7. Create templates  
+a.Create *template* folder in blog folder
+b.Create *blog_list.html* in templates folder  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog7b.PNG)  
+c.Create *blog_detail.html* in templates folder  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog7c.PNG)  
+
+## 8. migrate the url  
+
+a. creates *urls.py* in blog  
+b. write the path and method  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog8b.PNG)  
+c. Add the urls in myblog  *urls.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog8c.PNG)  
+
+## 9. modify *views.py* to create value  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog9.PNG)    
+
+## 10.  add urllinks
+a. modify the *blog_list.html* to add links to blog  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog10a.PNG)  
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog10a1.PNG)  
+
+
+
+b.modify the *blog_detail.html* to add links to homepage   
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog10b.PNG)  
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog10b1.PNG)  
+
+
+## 11. count the blogs in *blog_list.html*  
+`<p>There are {{blogs|length}} blogs</p>`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog11.PNG)  
+
+## 12a. use truncatechars in *blog_list.html*  
+a.before use the truncate  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog12a.PNG)  
+
+b.after use the truncate  
+`<p>{{blog.content|truncatechars:50}}</p>`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog12b.PNG)  
+
+## 12b. use truncatechars add Date in *blog_detail.html*  
+
+`<p>Author:{{blog.author}}</p>`  
+`<p>Date:{{blog.create_time|date:"Y-m-d G:n:s"}}</p>`  
+`<p>Catalog:{{blog.blog_type}}</p>`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog12b1.PNG)   
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog12b2.PNG)   
+
+## 13. click the catalog it will show all the blogs in the catalog  
+a. add path in *urls.py* in myblog folder  
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog13a.PNG)   
+
+b. add function in *views.py* in myblog folder  
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog13b.PNG)   
+
+c. add an html in templates named *blog_with_type.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog13c.PNG)  
+
+d. add Alabel in *blog_detail.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog13d.PNG)  
+
+f. The basic function  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog27012018.gif)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
