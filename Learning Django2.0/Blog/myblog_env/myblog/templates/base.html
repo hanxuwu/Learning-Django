@@ -18,12 +18,20 @@
     {% block header_extend %} {% endblock %}
 </head>
 <body>
-    <div class="nav">
-        <a class="logo" href="{%url 'home'%}">
-            <h3>BLOGS</h3>
-        </a>
-        <a href="/">Home</a>
-        <a href="{% url 'blog_list' %}">Blog</a>
+    <div class="navbar navbar-default" role="navigation">                
+        <div class="container-fluid">
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="{%url 'home'%}">
+                            BLOGS
+                    </a>
+
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="{%url 'home'%}">Home</a></li>
+                <li><a href="{% url 'blog_list' %}">Blog</a></li>
+            </ul>
+        </div>
+         <!-- Brand and toggle get grouped for better mobile display -->    
     </div>
     {% block content %}{% endblock %}
 </body>

@@ -516,9 +516,18 @@ b.download *jquery.min.js* from  https://ajax.googleapis.com/ajax/libs/jquery/1.
 c. introduce grid system  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog20c.PNG)   
 
-## 21.add Navbar   http://getbootstrap.com/docs/3.3/components/#navbar  
-
+## 21.change to bootstrap's Navbar   http://getbootstrap.com/docs/3.3/components/#navbar  
+a.reference of the Navbar  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog21a.PNG)  
+b. modify the *base.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog21b.PNG)   
+
+
+c. delete the unnecessary in the *base.css*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog21c.PNG)  
+
+d. Now we use bootstrap's Navbar it looks like  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29012018.gif)  
 
 
 
