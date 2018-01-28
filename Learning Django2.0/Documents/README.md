@@ -486,6 +486,48 @@ g. Modify *home.html* add  ccs style
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog18g.PNG)   
 
 
+## 19.initialize bootstrap  
+a.Download bootstrap3.3.7
+https://getbootstrap.com/   
+
+b.copy it to static folder
+
+c. delete the unnecessary files onlykeep:
+*bootstrap.min.css*  
+*bootstrap.min.css.map*
+*bootstrap.min.js*
+*font*
+
+## 20. add bootstrap in *base.html*  
+a.use basic template reference to http://getbootstrap.com/docs/3.3/getting-started/#download  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog20a.PNG)  
+
+`<link rel="stylesheet" href="{% static 'bootstrap-3.3.7/css/bootstrap.min.css' %}">`    
+`<script type="text/javascript" src="{% static 'bootstrap-3.3.7/js/bootstrap.min.js' %}"></script>`    
+`<html lang="en">`  
+ ` <head>`  
+   ` <meta charset="utf-8">`  
+   ` <meta http-equiv="X-UA-Compatible" content="IE=edge">`  
+    `<meta name="viewport" content="width=device-width, initial-scale=1">`  
+b.download *jquery.min.js* from  https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js  copy to static folder  
+`<script type="text/javascript" src="{% static 'jquery.min.js' %}"></script>`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog20b.PNG) 
+
+c. introduce grid system  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog20c.PNG)   
+
+## 21.add Navbar   http://getbootstrap.com/docs/3.3/components/#navbar  
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog21a.PNG)  
+
+
+
+
+
+
+
+
+
 
 
 
