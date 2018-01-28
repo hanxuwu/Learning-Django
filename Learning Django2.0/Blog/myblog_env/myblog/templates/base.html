@@ -9,6 +9,8 @@
         <a href="{%url 'home'%}">
             <h3>BLOGS</h3>
         </a>
+        <a href="/">Home</a>
+        <a href="{% url 'blog_list' %}">Blog</a>
     </div>
     <hr>
     {% block content %}{% endblock %}

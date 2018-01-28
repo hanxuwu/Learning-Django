@@ -426,10 +426,28 @@ a. Create global templates folder in myblog folder
 b. add it to *setting.py*  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog15b.PNG)  
 c. cut all the html templates to global templates  
-b. create a *blog* Folder in global templates for better manage  
+d. create a *blog* Folder in global templates for better manage  
 f. modify the path in *view.py*  
 `return render_to_response('blog/blog_with_type.html',context)`  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog15f.PNG)  
+
+## 16.No need to use the blog list as the homepage
+a. add url to homepage and bloglist in *base.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog16a.PNG)   
+b. add path in *urls.py* in blog folder  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog16b.PNG)   
+c. modify the global *urls.py* in myblog folder change the home page  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog16c.PNG)   
+
+d.Create *view.py* in myblog folder to write the function of the home page  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog16d.PNG)   
+
+e.Create *home.html* in global template folder in myblog folder(the same path as*base.html*)    
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog16e.PNG)   
+
+f. Now the blog looks like this:  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28012018.gif)  
+
   
 
 
