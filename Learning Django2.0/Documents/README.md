@@ -448,6 +448,55 @@ e.Create *home.html* in global template folder in myblog folder(the same path as
 f. Now the blog looks like this:  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28012018.gif)  
 
+## 17. Add CSS to decorate the website  
+a. modify *base.html*  
+
+use css    
+`<style type="text/css">`    
+name the navigator "nav"      
+`<div class="nav">`    
+hide the underline of the title    
+`text-decoration:none;`   
+make it a block and show in oneline  
+`display:inline-block`  
+make the navigator text black  
+`color:#000000`  
+dege distance
+`padding: 5px 10px `  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog17a.PNG)   
+b. modify *home.html*   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog17b.PNG)   
+c. new the home page likes this:  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28a012018.gif)  
+
+## 18. extract it to css  
+a. Create folder *static* in myblog folder    
+b. Create *base.css* in static folder     
+c. Copy` <style type="text/css">` part to *base.css*   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog18b.PNG)   
+d. Modify *base.html* add  
+`{% load staticfiles %}`  
+`<link rel="stylesheet" href=""> `   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog18d.PNG)   
+e. add static path in *setting.py*  make Django find the css file  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog18e.PNG)   
+f. Create *home.css* in static folder   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog18f.PNG)   
+g. Modify *home.html* add  ccs style  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog18g.PNG)   
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
