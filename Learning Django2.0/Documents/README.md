@@ -527,7 +527,19 @@ c. delete the unnecessary in the *base.css*
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog21c.PNG)  
 
 d. Now we use bootstrap's Navbar it looks like  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29012018.gif)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29012018.gif) 
+
+
+## 22.add navbutton  for the mobile devices
+a. reference http://getbootstrap.com/docs/3.3/components/#nav  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog21a.PNG)    
+
+b. modify the *base.html*   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog22b.PNG)  
+
+c. Test the navbutton
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29a012018)   
+
 
 
 
