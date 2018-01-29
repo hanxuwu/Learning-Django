@@ -538,7 +538,7 @@ b. modify the *base.html*
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog22b.PNG)  
 
 c. Test the navbutton  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29a012018)
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/MyBlog29012018.gif)
 
 
 ## 23. Mark The selected navbar  
@@ -556,6 +556,20 @@ e.Modify *blog_with_type.html*  add `{% block nav_blog_active %}active{% endbloc
 
 f.test:  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog23f.PNG)  
+
+## 24. Fix the navbar 
+a.Before fix  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29b012018.gif)  
+
+b. Add `navbar-fix-top` in *base.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog24b.PNG)  
+c. The title was gone  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog24c.PNG)  
+d. Modify *base.css* change the margin.USE !important,otherwize it doesn't work  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog24d.PNG)  
+e. Test the navbar  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29c012018.gif)
+
 
 
 
