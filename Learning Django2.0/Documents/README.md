@@ -537,8 +537,28 @@ a. reference http://getbootstrap.com/docs/3.3/components/#nav
 b. modify the *base.html*   
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog22b.PNG)  
 
-c. Test the navbutton
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29a012018)   
+c. Test the navbutton  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29a012018)
+
+
+## 23. Mark The selected navbar  
+
+a.Modify *base.html*  add  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog23a.PNG)  
+b.Modify *home.html*  add  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog23b.PNG)  
+c.Modify *blog_detail.html*  add `{% block nav_blog_active %}active{% endblock %}` 
+
+d.Modify *blog_list.html*  add  `{% block nav_blog_active %}active{% endblock %}`
+
+e.Modify *blog_with_type.html*  add `{% block nav_blog_active %}active{% endblock %}`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog23e.PNG)  
+
+f.test:  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog23f.PNG)  
+
+
+
 
 
 
