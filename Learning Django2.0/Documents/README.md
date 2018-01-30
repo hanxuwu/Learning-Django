@@ -575,12 +575,30 @@ a. Reference to grid system
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25a.PNG)   
 
 b.Modify *blog_list.html*  use container and grid system   then add content of blog catalog part  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25b.PNG)
-c. cut blog folder in templates to templates in myblog/blog folder   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25b.PNG)  
+c. cut blog folder in templates to templates in myblog/blog folder     
 d. Modify "views.py"  in /blog/myblog  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25d.PNG)
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25d.PNG)  
 e. Now it shold looks like  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25e.PNG)
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25e.PNG)  
+
+## 26. Add Panels  
+a. Reference to Panel  https://getbootstrap.com/docs/3.3/components/#panels  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog26a.PNG)  
+b. modify *blog_list.html*   
+c. delete the dot  
+  `<ul style="list-style-type:none;">`  
+d. reference to different device  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog26d.PNG)    
+e. make it fits the Small devices Tablets  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog26e.PNG)  
+f. test  panels  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog31012018.gif)
+
+
+
+
+
 
 
 
