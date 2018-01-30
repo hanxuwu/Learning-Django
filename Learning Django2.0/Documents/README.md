@@ -568,7 +568,33 @@ c. The title was gone
 d. Modify *base.css* change the margin.USE !important,otherwize it doesn't work  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog24d.PNG)  
 e. Test the navbar  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29c012018.gif)
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29c012018.gif)  
+
+## 25. Grid system  
+a. Reference to grid system  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25a.PNG)   
+
+b.Modify *blog_list.html*  use container and grid system   then add content of blog catalog part  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25b.PNG)
+c. cut blog folder in templates to templates in myblog/blog folder   
+d. Modify "views.py"  in /blog/myblog  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25d.PNG)
+e. Now it shold looks like  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog25e.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

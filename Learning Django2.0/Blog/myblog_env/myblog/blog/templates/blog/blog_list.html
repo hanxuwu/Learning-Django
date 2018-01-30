@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}MyWebsite{% endblock %}
+{% block nav_blog_active %}active{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                    {% for blog in blogs %}
+                    <a href="{% url 'blog_detail' blog.pk %}">
+                        <h3>{{blog.title}}</h3>
+                    </a>
+                        <p>{{blog.content|truncatechars:50}}</p>
+                    {% empty %}
+                        <p>-- There is no Blogs --</p>    
+                    {% endfor %}
+                    <p>There are {{blogs|length}} blogs</p>          
+            </div>
+            <div class="class col-md-4">
+                <h4>Blog Catalog</h4>
+                <ul>{% for blog_type in blog_types %}
+                    <li><a href="{% url 'blogs_with_type' blog_type.pk %}">{{blog_type.type_name}}</a>
+                    </li>
+                    {% empty %}                    
+                    <li>There is no Catalogs</li>    
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
