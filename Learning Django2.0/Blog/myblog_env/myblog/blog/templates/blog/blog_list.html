@@ -10,15 +10,19 @@
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Blog Catalog(There are {{blogs|length}} blogs)</div>
+                    <div class="panel-heading">Blog List(There are {{blogs|length}} blogs)</div>
                     <div class="panel-body">
                         {% for blog in blogs %}
-                        <a href="{% url 'blog_detail' blog.pk %}">
-                            <h3>{{blog.title}}</h3>
-                        </a>
-                            <p>{{blog.content|truncatechars:50}}</p>
+                            <div class="blog">
+                                    <h3><a href="{% url 'blog_detail' blog.pk %}">
+                                    {{blog.title}}
+                                    </a></h3>
+                                    <p>{{blog.content|truncatechars:200}}</p>
+                            </div>
                         {% empty %}
-                            <p>-- There is no Blogs --</p>    
+                            <div class="blog">
+                                <h3>-- There is no Blogs --</h3>   
+                            </div> 
                         {% endfor %}
                     </div>                    
                 </div>        

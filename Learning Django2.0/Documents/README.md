@@ -606,7 +606,24 @@ c. migrate the *blog.css* to /blog
 Create the *static* folder in /myblog/blog  
 copy the *blog.css* to static  
 
-d.restart the server   
+d.restart the server  
+
+ 
+## 28. modify the margin and font  
+a. Preview more words  
+`<p>{{blog.content|truncatechars:200}}</p>`  
+b. add new class "blog"  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28b.PNG)   
+c.modify *blog.css*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28c.PNG)   
+d.There are one more line at the bottom  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28d.PNG)  
+f. elimiate the last line  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28f.PNG)   
+g. it should looks like  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28g.PNG)   
+
+
 
 
 
