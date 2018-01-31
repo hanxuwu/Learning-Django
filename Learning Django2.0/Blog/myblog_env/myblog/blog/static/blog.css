@@ -12,3 +12,8 @@ div.blog:not(:last-child){
 div.blog h3{
     margin-top:0.5em;
 }
+
+div.blog p.blog-info{
+    margin-bottom:0;
+
+}

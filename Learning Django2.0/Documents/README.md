@@ -623,6 +623,20 @@ f. elimiate the last line
 g. it should looks like  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog28g.PNG)   
 
+## 29. Add catalog and Data in blog list  
+a. Add catalog  in  *blog_list.html*   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29a.PNG)  
+b.  Modify *blog.css* change the margin  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29b.PNG)  
+c. Now it looks like  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29c.PNG)  
+d. Reference to button  https://getbootstrap.com/docs/3.3/components/#glyphicons-examples   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29d.PNG)  
+e. Add catalog-tag,and time-tag  
+`<span class="glyphicon glyphicon-star"></span>`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29e.PNG)
+f. Now it looks like  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog01022018.gif)  
 
 
 
