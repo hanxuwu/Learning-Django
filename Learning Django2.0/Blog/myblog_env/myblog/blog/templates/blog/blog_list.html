@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block title %}MyWebsite{% endblock %}
 {% block nav_blog_active %}active{% endblock %}
+{% load staticfiles %}
+{% block header_extend %}
+    <link rel="stylesheet" href="{% static 'blog.css' %}">
+{% endblock %}
 {% block content %}
     <div class="container">
         <div class="row">
@@ -19,18 +23,19 @@
                     </div>                    
                 </div>        
             </div>
-        <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Blog Catalog</div>
-                <div class="panel-body">
-                    <ul style="list-style-type:none;">
-                        {% for blog_type in blog_types %}
-                        <li><a href="{% url 'blogs_with_type' blog_type.pk %}">{{blog_type.type_name}}</a>
-                        </li>
-                        {% empty %}                    
-                        <li>There is no Catalogs</li>    
-                        {% endfor %}
-                    </ul>
+            <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Blog Catalog</div>
+                    <div class="panel-body">
+                        <ul class="blog-types">
+                            {% for blog_type in blog_types %}
+                            <li><a href="{% url 'blogs_with_type' blog_type.pk %}">{{blog_type.type_name}}</a>
+                            </li>
+                            {% empty %}                    
+                            <li>There is no Catalogs</li>    
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

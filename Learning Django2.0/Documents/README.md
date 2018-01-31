@@ -593,7 +593,28 @@ d. reference to different device
 e. make it fits the Small devices Tablets  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog26e.PNG)  
 f. test  panels  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog31012018.gif)
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog31012018.gif)  
+
+## 27. Extract the css  
+a.Create *blog.css* in /myblog/static/  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog27a.PNG)  
+
+b.modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog27b.PNG)  
+
+c. migrate the *blog.css* to /blog  
+Create the *static* folder in /myblog/blog  
+copy the *blog.css* to static  
+
+d.restart the server   
+
+
+
+
+
+
+
+
 
 
 
