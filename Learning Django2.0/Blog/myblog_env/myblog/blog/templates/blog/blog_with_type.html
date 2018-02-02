@@ -1,22 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'blog/blog_list.html' %}
+{% block title %}{{blog_type.type_name}}{% endblock %}
 
-{% block title %}
-    {{blog_type.type_name}}
-{% endblock %}
-
-{% block nav_blog_active %}active{% endblock %}
-
-{% block content %}
-    <h3>{{blog_type.type_name}}</h3>
-    {% for blog in blogs %}
-    <a href="{% url 'blog_detail' blog.pk %}">
-        <h3>{{blog.title}}</h3>
-    </a>
-        <p>{{blog.content|truncatechars:50}}</p>
-    {% empty %}
-        <p>-- There is no Blogs --</p>    
-    {% endfor %}
-    <hr>
-    <p>There are {{blogs|length}} blogs</p> 
-
+{% block blog_list_title %}
+{{blog_type.type_name}} (There are {{blogs|length}} blogs )
+<a href="{% url 'blog_list' %}">View all the blogs</a>
 {% endblock %}

@@ -638,6 +638,32 @@ e. Add catalog-tag,and time-tag
 f. Now it looks like  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog01022018.gif)  
 
+## 30. modify other pages  
+a. Modify *blog_list.html*  
+`<div class="panel-heading">{% block blog_list_title %} Blog List(There are {{blogs|length}} blogs){% endblock %} </div>`  
+`<span class="glyphicon glyphicon-time"></span>{{blog.create_time|date:"Y-m-d H:n:s"}}`  
+b. Modify *blog_with_type.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog30b.PNG)  
+
+c. Modify *views.py* copy catalogs  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog30c.PNG)  
+
+d. Reference to Grid-offsetting https://getbootstrap.com/docs/3.3/css/#grid-offsetting   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog30d.PNG)  
+e. Modify *blog_detail.html* copy catalogs  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog30e.PNG) 
+
+f.Modify *blog.css*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog30f.PNG) 
+
+g.test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog03022018.gif) 
+
+
+
+
+
+
 
 
 
