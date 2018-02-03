@@ -657,7 +657,29 @@ f.Modify *blog.css*
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog30f.PNG) 
 
 g.test  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog03022018.gif) 
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog03022018.gif)  
+
+## 31. Shell command  
+a. open shell  
+`python manage.py shell`  
+b. check the current article  
+`from blog.models import Blog`  
+`dir()`    
+`Blog.objects.all()`    
+`Blog.objects.count()`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog31b.PNG)  
+c. add new object  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog31c.PNG)  
+d. use loop add 30 blogs  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog31d.PNG)   
+e.now there are 35 blogs in total  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog04022018.gif)   
+
+
+
+
+
+
 
 
 
