@@ -10,9 +10,9 @@
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
                 <div class="panel panel-default">
-                    <div class="panel-heading">{% block blog_list_title %} Blog List(There are {{blogs|length}} blogs){% endblock %} </div>
+                    <div class="panel-heading">{% block blog_list_title %} Blog List(There are {{page_of_blogs.paginator.count}} blogs){% endblock %} </div>
                     <div class="panel-body">
-                        {% for blog in page_of_blogs.object_list %}
+                        {% for blog in blogs %}
                             <div class="blog">
                                     <h3><a href="{% url 'blog_detail' blog.pk %}">{{blog.title}}</a></h3>
                             <p class="blog-info">

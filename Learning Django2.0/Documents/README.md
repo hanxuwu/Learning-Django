@@ -714,6 +714,16 @@ b. modify *blog_list.html*
 c. test  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog06a022018.gif)  
 
+## 34. fix the bug that blog_type doesn't show anything  
+a. modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog34a.PNG)  
+
+b. modify *view.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog34b.PNG)  
+
+
+
+
 
 
 
