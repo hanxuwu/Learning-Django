@@ -702,6 +702,24 @@ h.modify *blog_list.html*
 i.test the blog   
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog06022018.gif)  
 
+## 33.add pagenumber button  
+
+
+a.reference to bootstrap pageination https://getbootstrap.com/docs/3.3/components/#pagination    
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog33a.PNG)      
+
+b. modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog33b.PNG)
+
+c. test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog06a022018.gif)  
+
+
+
+
+
+
+
 
 
 
