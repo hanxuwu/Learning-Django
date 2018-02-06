@@ -12,7 +12,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">{% block blog_list_title %} Blog List(There are {{blogs|length}} blogs){% endblock %} </div>
                     <div class="panel-body">
-                        {% for blog in blogs %}
+                        {% for blog in page_of_blogs.object_list %}
                             <div class="blog">
                                     <h3><a href="{% url 'blog_detail' blog.pk %}">{{blog.title}}</a></h3>
                             <p class="blog-info">

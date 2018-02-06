@@ -675,6 +675,47 @@ d. use loop add 30 blogs
 e.now there are 35 blogs in total  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog04022018.gif)   
 
+## 32. add paginator  
+
+a. open shell  
+`python manage.py shell`  
+b. import Paginator  but there is an warning  
+`from django.core.paginator import Paginator`  
+`from blog.models import Blog`   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog32b.PNG)  
+
+c. add meta in *models.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog32c.PNG)  
+
+d. Migration the database  then migrate  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog32d.PNG) 
+
+e.now the list is in order  
+f.Some command of Paginator  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog32f.PNG)  
+g. Modify *view.py* get the page num  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog32g.PNG)  
+
+h.modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog32h.PNG)   
+
+i.test the blog   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog06022018.gif)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
