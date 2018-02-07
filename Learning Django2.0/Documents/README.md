@@ -735,8 +735,25 @@ d. test
 a.modify *blog_list.html*  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog36a.PNG)  
 
-b.modify *blog.css*  align to center
+b.modify *blog.css*  align to center  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog36b.PNG)  
+## 37. update the type pages  
+a. modify *views.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog37a1.PNG)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog37a2.PNG)  
+
+b. add setting  number of pages shows each pages  *setting.py*  
+`from django.conf import settings`  
+`setting.xxxxxx`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog37b.PNG)  
+
+c. update *blog_with_type.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog37c.PNG)  
+
+d.test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog07a022018.gif)  
+
+
 
 
 
