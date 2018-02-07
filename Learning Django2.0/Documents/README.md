@@ -721,6 +721,24 @@ a. modify *blog_list.html*
 b. modify *view.py*  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog34b.PNG)  
 
+## 35. highlight the button limit number of button and  add first last page
+a. highlight the current page, modify *blog_list.html*   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog35a.PNG)    
+b. hide the pagenumber if there is too many pages, modify*view.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog35b.PNG)  
+c. modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog35c.PNG)  
+d. test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog07022018.gif)    
+
+
+
+
+
+
+
+
+
 
 
 
