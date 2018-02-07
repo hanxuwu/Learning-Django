@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
                 <div class="panel panel-default">
-                    <div class="panel-heading">{% block blog_list_title %} Blog List(There are {{page_of_blogs.paginator.count}} blogs){% endblock %} </div>
+                    <div class="panel-heading">{% block blog_list_title %} Blog List {% endblock %} </div>
                     <div class="panel-body">
                         {% for blog in blogs %}
                             <div class="blog">
@@ -29,7 +29,7 @@
                         {% endfor %}
                     </div>                    
                 </div>  
-                <div>
+                <div class="paginator">
                     <ul class="pagination">
                         {# previous page #}
                         <li>
@@ -64,6 +64,9 @@
                             {% endif %}
                         </li>
                     </ul>
+                    <p>
+                        There are {{page_of_blogs.paginator.count}} blogs, Current page is {{ page_of_blogs.number }},There are  {{page_of_blogs.paginator.num_pages}}  pages
+                    </p>
                 </div>
             </div>    
             <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">

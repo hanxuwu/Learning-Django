@@ -729,7 +729,18 @@ b. hide the pagenumber if there is too many pages, modify*view.py*
 c. modify *blog_list.html*  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog35c.PNG)  
 d. test  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog07022018.gif)    
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog07022018.gif)  
+
+## 36. add content of the pages  
+a.modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog36a.PNG)  
+
+b.modify *blog.css*  align to center
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog36b.PNG)  
+
+
+
+
 
 
 
