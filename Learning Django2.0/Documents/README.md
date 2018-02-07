@@ -751,9 +751,29 @@ c. update *blog_with_type.html*
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog37c.PNG)  
 
 d.test  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog07a022018.gif)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog07a022018.gif) 
 
+## 38. previous blog and next blog  
+a. modify *view.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog38a.PNG)  
 
+b. modify *blog_detail.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog38b.PNG)  
+
+c.reference tp filter  
+`__gt (greater than)`  
+`__gte (greater(equal))`  
+`__lt (less than)`    
+`__lte (less(equal))`  
+`__contains`  
+`__icontains  (ignore case sentivity)`   
+`__startswith`  
+`__endwith`  
+`__in`  
+`__range`  
+
+d. modify *blog.css*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog38d.PNG)  
 
 
 
