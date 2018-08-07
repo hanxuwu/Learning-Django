@@ -527,7 +527,7 @@ c. delete the unnecessary in the *base.css*
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog21c.PNG)  
 
 d. Now we use bootstrap's Navbar it looks like  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29012018.gif) 
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/MyBlog29012018.gif) 
 
 
 ## 22.add navbutton  for the mobile devices
@@ -538,7 +538,7 @@ b. modify the *base.html*
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog22b.PNG)  
 
 c. Test the navbutton  
-![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/MyBlog29012018.gif)
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog29a012018.gif)
 
 
 ## 23. Mark The selected navbar  
@@ -774,6 +774,172 @@ c.reference tp filter
 
 d. modify *blog.css*  
 ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog38d.PNG)  
+
+## 39. add archive by date  
+a. Modify *blog/urls.py*  add new path  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog39a.PNG)  
+b. Modify *views.py*    add function of the date  
+add `context['blog_dates']=Blog.objects.dates('create_time','month',order="DESC")` to blog\_list and blogs\_with\_type  
+
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog39b.PNG)  
+c  Modify *blog_list.html*   add panel of data archive  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog39c.PNG)  
+d  Modify *blog.css*   get rif of the dot  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog39d.PNG)   
+e. Create *blog_with_data.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog39e.PNG)  
+
+f. fix bug H:n:s  
+`Date:{{blog.create_time|date:"Y-m-d H:i:s"}}`  
+
+## 40. extract duplicated code(common data)   
+a. Modify *views.py*   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog40a.PNG)   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog40a2.PNG)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog40a3.PNG)  
+
+b. test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog09022018.gif)  
+
+## 41. use anotate count by catalog  
+a. Modify *views.py*   add anotate   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog41a.PNG)  
+
+b. Modify *blog_list.html*  show in website  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog41b.PNG)  
+
+c. test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog41c.PNG)  
+
+## 42. use anotate  and dict count by date archive  
+a. Modify *views.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog42a.PNG)  
+
+b. Modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog42b.PNG)  
+
+c. Test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog42c.PNG)  
+
+## 43. use SimpleHtml
+a.modify *blog_detail.html* add safe  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog43a.PNG)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog43a1.PNG)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog43a2.PNG)  
+
+
+
+b.modify *blog_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog43b2.PNG)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog43b.PNG)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog43b3.PNG)  
+
+## 44. use django-ckeditor add RichTEXT  
+a. install django-ckeditor  
+`pip install django-ckeditor`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog44a.PNG)
+
+b. register in  *setting.py*   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog44b1.PNG) 
+
+
+
+c.modify *models.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog44b.PNG)   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog44d.PNG)   
+
+d. migrates
+`python manage.py makemigrations`  
+`python manage.py migrate`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog44d1.PNG)  
+
+e.test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog44e.PNG)  
+
+## 45.add imageuploader  
+a. install pillow  
+`pip install pillow`  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog45a.PNG)  
+b. register app  in *setting.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog45b.PNG)  
+c. modify *setting.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog45c.PNG)  
+
+d. create folder *media* in myblog
+
+e.reference to url setting  https://pypi.python.org/pypi/django-ckeditor/5.4.0   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog45e.PNG)  
+
+f. modify *url* to set the upload url  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog45f.PNG)  
+
+g. modify *models.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog45g.PNG)  
+
+h. migrate and migrations  
+
+i. test  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog45i.PNG)  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog11022018.gif)  
+
+## 46. Count the views(simple solution)  
+
+a. Modify *models.py*  add new keyword   
+  ![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog46a.PNG)   
+b. Makemigrtration and migrate   
+c. Modify *admin.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog46c.PNG) 
+
+d. Modify *views.py*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog46d.PNG) 
+
+f. Modify *blog_detail.html*   
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog46f.PNG)
+
+g. Modify *bloh_list.html*  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog46g.PNG)  
+
+h. check the cookies  
+![Image](https://github.com/hanxuwu/Learning-Django/blob/master/Learning%20Django2.0/Documents/SCREENSHOT/myblog46h.PNG)  
+
+## 47 Using a new virtualenv then copy the file to develop
+a. save the exist environment
+`pip freeze > requirements.txt`
+b. build the new virtualenv
+`virtualenv myblog_env1`
+c. apply the exist evvironment
+`pip install -r requirements.txt`
+d. then copy the myblog
+
+
+## 48 After changing the .gitignore to apply
+`git rm -r --cached .`
+`git add .`
+`git commit -m "fixed untracked files"`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
