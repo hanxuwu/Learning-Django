@@ -1,7 +1,7 @@
 #ignore these files
-/Blog/myblog_env1/Include
-/Blog/myblog_env1/Lib
-/Blog/myblog_env1/Scripts
-/Blog/myblog_env1/tcl
-/Blog/myblog_env1/Lib
+/Blog/myblog_env1/Include/
+/Blog/myblog_env1/Lib/
+/Blog/myblog_env1/Scripts/
+/Blog/myblog_env1/tcl/
+/Blog/myblog_env1/Lib/
 /Blog/myblog_env1/pip-selfcheck.json
